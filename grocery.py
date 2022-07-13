@@ -39,10 +39,10 @@ class Solution:
         list2 = str2.split(' ')
 
         for item in list1:
-            if item not in finallist:
+            if item not in finallist and item!= '':
                 finallist.append(item)
         for item in list2:
-            if item not in finallist:
+            if item not in finallist item!= '':
                 finallist.append(item)
 
         return finallist
