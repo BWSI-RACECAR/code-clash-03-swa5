@@ -35,7 +35,7 @@ class Solution:
 
         # TODO: Write code below to return a list with the solution to the prompt
        retlist = str1.split(" ")
-       retlist2 = str1.split(" ")
+       retlist2 = str2.split(" ")
        finallist = []
        draftlist = retlist + retlist2
     
