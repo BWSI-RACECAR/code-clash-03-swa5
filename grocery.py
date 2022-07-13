@@ -34,12 +34,19 @@ class Solution:
         # return: list
 
         # TODO: Write code below to return a list with the solution to the prompt
-        returnlist = []
-        returnlist.append(str1)
-        if str1 != str2:
-            returnlist.append(str2)
-            return returnlist
-        return returnlist
+       retlist = str1.split(" ")
+       retlist2 = str1.split(" ")
+       finallist = []
+       draftlist = retlist + retlist2
+    
+       for item in draftlist:
+        if item not in finallist:
+            finallist.append(item)
+       return finallist 
+
+
+        
+
 
 def main():
     string1 = input()
