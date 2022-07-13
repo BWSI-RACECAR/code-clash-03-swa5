@@ -57,11 +57,11 @@ class Solution:
        list2[len(list2)-1] = list2[len(list2)-1].strip()
 
        for item in list1:
-        if item not in finallist and item != "":
+        if item not in finallist and item != '':
             finallist.append(item)
         
         for item in list2:
-            if item not in finallist and item != "":
+            if item not in finallist and item != '':
                 finallist.append(item)
         return finallist
 
