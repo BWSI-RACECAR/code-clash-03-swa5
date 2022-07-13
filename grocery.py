@@ -39,11 +39,11 @@ class Solution:
         list2 = str2.split(' ')
 
         for item in list1:
-            item.strip("\r")
+            item.strip()
             if item not in finallist and item!= '':
                 finallist.append(item)
         for item in list2:
-            item.strip("\r")
+            item.strip()
             if item not in finallist and item!= '':
                 finallist.append(item)
 
