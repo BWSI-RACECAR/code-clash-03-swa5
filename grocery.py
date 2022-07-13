@@ -35,15 +35,15 @@ class Solution:
 
         # TODO: Write code below to return a list with the solution to the prompt
         finallist = []
-        list1 = str1.split(' ')
-        list2 = str2.split(' ')
+        list1 = str1.split(' ').strip()
+        list2 = str2.split(' ').strip()
 
         for item in list1:
-            item.strip()
+            item.rstrip("\r")
             if item not in finallist and item!= '':
                 finallist.append(item)
         for item in list2:
-            item.strip()
+            item.rstrip("\r")
             if item not in finallist and item!= '':
                 finallist.append(item)
 
