@@ -35,8 +35,8 @@ class Solution:
 
         # TODO: Write code below to return a list with the solution to the prompt
         finallist = []
-        list1 = str1.split(' ').strip()
-        list2 = str2.split(' ').strip()
+        list1 = str1.split(' ')
+        list2 = str2.split(' ')
 
         for item in list1:
             item.rstrip("\r")
