@@ -35,13 +35,18 @@ class Solution:
 
         # TODO: Write code below to return a list with the solution to the prompt
        retlist = str1.split(" ")
+       retlist[len(retlist)-1] = retlist[len(retlist)-1].strip()
+
        retlist2 = str2.split(" ")
+       retlist2[len(retlist2)-1] = retlist2[len(retlist2)-1].strip()
        finallist = []
-       draftlist = retlist + retlist2
+       
     
-       for item in draftlist:
-        if item not in finallist:
+       for item in retlist:
+        if item not in finallist and item!= '':
             finallist.append(item)
+       for item in retlist2:
+        if item not in finallist and item != '': 
        return finallist 
 
 
